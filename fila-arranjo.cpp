@@ -14,7 +14,8 @@ void FilaArranjo::Enfileira(TipoNo* item) {
     tamanho++;
 }
 
-TipoNo FilaArranjo::Desenfileira() {
+
+TipoNo* FilaArranjo::Desenfileira() {
     TipoNo *aux;
     if (tamanho == 0)
         throw "Fila está vazia!";
@@ -24,6 +25,7 @@ TipoNo FilaArranjo::Desenfileira() {
     tamanho--;
     return aux;
 }
+
 
 void FilaArranjo::Limpa() {
     frente = 0;

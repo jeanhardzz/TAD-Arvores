@@ -2,6 +2,7 @@
 #define FILA
 
 #include "tipoitem.h"
+#include "tipono.h"
 
 class Fila
 {

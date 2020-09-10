@@ -9,6 +9,8 @@ class ArvoreBinaria
         void Caminha(int tipo);
         void CaminhaNivel();
         void Limpa();
+        int FazAlgo(TipoNo *no);
+        TipoNo* GetRaiz();
     private:
         void InsereRecursivo(TipoNo* &p, TipoItem item);
         void ApagaRecursivo(TipoNo* p);

@@ -14,7 +14,7 @@ class FilaArranjo : public Fila
         int frente;
         int tras;
         static const int MAXTAM = 8;
-        TipoNo itens[MAXTAM];
+        TipoNo *itens[MAXTAM];
 };
 
 #endif

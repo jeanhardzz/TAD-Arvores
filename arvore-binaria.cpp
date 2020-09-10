@@ -92,3 +92,23 @@ void ArvoreBinaria::ApagaRecursivo(TipoNo *p){
         delete p;
     }
 }
+
+int ArvoreBinaria::FazAlgo(TipoNo *no){       
+    int a,b,x;
+    x= -1;
+    if(no != 0){
+        a = FazAlgo(no->esq);
+        b = FazAlgo(no->dir);
+        if(a >b){
+            x = a+1;
+        }else{
+            x = b+1;
+        }
+    }
+    return x;
+
+}
+
+TipoNo* ArvoreBinaria::GetRaiz(){
+    return raiz;
+}
